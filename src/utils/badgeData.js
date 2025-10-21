@@ -6,7 +6,7 @@ export const parseCSVBadgeData = () => {
       id: "68f6c91382f13ed14465558c",
       name: "Recycling Rookie",
       description: "Sorted your first 10 recyclable items",
-      icon: "🥬",
+      icon: "🌍",
       color: "#3b82f6",
       category: "",
       earned_date: "2025-01-15",
@@ -16,6 +16,7 @@ export const parseCSVBadgeData = () => {
       created_by_id: "68f6c687f122562a7aeab1f4",
       created_by: "cn221071hz@gmail.com",
       is_sample: "",
+      model_url: "/models/planet_earth.glb", // Add 3D model for Earth
     },
     {
       id: "68f6c91382f13ed14465558d",

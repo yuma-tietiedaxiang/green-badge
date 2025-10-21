@@ -2,27 +2,9 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { Sparkles } from "lucide-react";
+import { Earth3DModel } from "./Earth3DModel";
 
-interface BadgeUnlockProps {
-  onCheckBadges: () => void;
-  autoRedirectDelay?: number; // 自动跳转延迟时间（毫秒），0表示不自动跳转
-}
-
-export function BadgeUnlock({
-  onCheckBadges,
-  autoRedirectDelay = 0,
-}: BadgeUnlockProps) {
-  // 自动跳转功能
-  useEffect(() => {
-    if (autoRedirectDelay > 0) {
-      const timer = setTimeout(() => {
-        onCheckBadges();
-      }, autoRedirectDelay);
-
-      return () => clearTimeout(timer);
-    }
-  }, [onCheckBadges, autoRedirectDelay]);
-
+export function BadgeUnlock({ onCheckBadges }) {
   // Generate particles for sparkle effect
   const particles = Array.from({ length: 20 }, (_, i) => ({
     id: i,
@@ -197,7 +179,7 @@ export function BadgeUnlock({
 
             {/* Badge emoji */}
             <motion.div
-              className="relative text-[120px]"
+              className="relative w-full h-full flex items-center justify-center"
               initial={{ scale: 0, rotate: 180 }}
               animate={{ scale: 1, rotate: 0 }}
               transition={{
@@ -207,7 +189,7 @@ export function BadgeUnlock({
                 delay: 0.5,
               }}
             >
-              🥑
+              <Earth3DModel className="w-full h-full" />
             </motion.div>
           </motion.div>
 
@@ -264,7 +246,7 @@ export function BadgeUnlock({
               ease: "easeInOut",
             }}
           >
-            欢迎来到绿色徽章！
+            Welcome to Green Badge!
           </motion.h1>
           <motion.p
             className="text-green-700 text-xl"
@@ -272,7 +254,7 @@ export function BadgeUnlock({
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 0.6 }}
           >
-            开始你的环保之旅
+            Start Your Eco Journey
           </motion.p>
         </motion.div>
 
@@ -287,7 +269,7 @@ export function BadgeUnlock({
             className="mt-8 px-8 py-6 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
           >
             <Sparkles className="w-5 h-5 mr-2" />
-            查看我的徽章
+            Explore My Badges
           </Button>
         </motion.div>
       </div>

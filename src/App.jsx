@@ -15,9 +15,7 @@ function App() {
   };
 
   if (showSplash) {
-    return (
-      <BadgeUnlock onCheckBadges={handleCheckBadges} autoRedirectDelay={5000} />
-    );
+    return <BadgeUnlock onCheckBadges={handleCheckBadges} />;
   }
 
   return (

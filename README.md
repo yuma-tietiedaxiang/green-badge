@@ -1,73 +1,81 @@
-# Green Badge - 环保徽章系统
+# Green Badge - Environmental Badge System
 
-这是一个基于 React 的环保徽章系统，用于展示用户在垃圾分类方面的成就。
+A React-based environmental badge system for showcasing users' achievements in waste sorting and environmental protection.
 
-## 功能特性
+## Features
 
-- 🏆 徽章展示系统
-- 📊 统计图表
-- 🎨 3D 徽章模型展示
-- 📱 响应式设计
-- 🌱 环保主题
-- ✨ 开屏动画效果
+- 🏆 Badge display system
+- 📊 Statistics and charts
+- 🎨 3D badge model showcase
+- 📱 Responsive design
+- 🌱 Environmental theme
+- ✨ Splash screen animation
 
-## 技术栈
+## Tech Stack
 
 - React 18
 - Vite
 - Tailwind CSS
-- Three.js (3D 渲染)
-- Framer Motion (动画)
-- React Query (数据管理)
-- React Router (路由)
+- Three.js (3D rendering)
+- Framer Motion (animations)
+- React Query (data management)
+- React Router (routing)
 
-## 安装和运行
+## Installation and Setup
 
-1. 安装依赖：
+1. Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. 启动开发服务器：
+2. Start the development server:
 
 ```bash
 npm run dev
 ```
 
-3. 打开浏览器访问 `http://localhost:5173`
+3. Open your browser and visit `http://localhost:5173`
 
-## 项目结构
+## Project Structure
 
 ```
 src/
 ├── components/
-│   ├── ui/           # 基础UI组件
-│   ├── badges/       # 徽章相关组件
-│   ├── statistics/   # 统计相关组件
-│   └── BadgeUnlock.jsx # 开屏动画组件
-├── pages/            # 页面组件
-├── api/              # API客户端
-├── utils/            # 工具函数
-└── entities/         # 数据模型
+│   ├── ui/           # Base UI components
+│   ├── badges/       # Badge-related components
+│   ├── statistics/   # Statistics components
+│   └── BadgeUnlock.jsx # Splash screen animation component
+├── pages/            # Page components
+├── api/              # API client
+├── utils/            # Utility functions
+└── entities/         # Data models
 ```
 
-## 开发说明
+## Development Notes
 
-- 项目使用模拟数据进行开发
-- 所有徽章数据都是静态生成的
-- 3D 模型功能需要实际的.glb 文件支持
-- UI 组件基于 Radix UI 和自定义样式
-- 包含精美的开屏动画效果
+- Project uses mock data for development
+- All badge data is statically generated
+- 3D model functionality requires actual .glb file support
+- UI components are based on Radix UI and custom styling
+- Includes beautiful splash screen animation effects
 
-## 构建
+## Build
 
 ```bash
 npm run build
 ```
 
-## 预览
+## Preview
 
 ```bash
 npm run preview
 ```
+
+## Contributing
+
+Feel free to contribute to this project by submitting issues or pull requests.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
