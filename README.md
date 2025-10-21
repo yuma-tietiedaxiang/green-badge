@@ -9,6 +9,7 @@
 - 🎨 3D 徽章模型展示
 - 📱 响应式设计
 - 🌱 环保主题
+- ✨ 开屏动画效果
 
 ## 技术栈
 
@@ -34,7 +35,7 @@ npm install
 npm run dev
 ```
 
-3. 打开浏览器访问 `http://localhost:3000`
+3. 打开浏览器访问 `http://localhost:5173`
 
 ## 项目结构
 
@@ -43,7 +44,8 @@ src/
 ├── components/
 │   ├── ui/           # 基础UI组件
 │   ├── badges/       # 徽章相关组件
-│   └── statistics/   # 统计相关组件
+│   ├── statistics/   # 统计相关组件
+│   └── BadgeUnlock.jsx # 开屏动画组件
 ├── pages/            # 页面组件
 ├── api/              # API客户端
 ├── utils/            # 工具函数
@@ -56,6 +58,7 @@ src/
 - 所有徽章数据都是静态生成的
 - 3D 模型功能需要实际的.glb 文件支持
 - UI 组件基于 Radix UI 和自定义样式
+- 包含精美的开屏动画效果
 
 ## 构建
 
