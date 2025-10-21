@@ -1,0 +1,83 @@
+{
+  "name": "Badge",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique badge identifier"
+    },
+    "name": {
+      "type": "string",
+      "description": "Badge name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Badge description"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Badge icon (emoji or symbol)"
+    },
+    "model_url": {
+      "type": "string",
+      "description": "URL to the .glb 3D model file"
+    },
+    "color": {
+      "type": "string",
+      "description": "Badge accent color"
+    },
+    "category": {
+      "type": "string",
+      "description": "Badge category (milestone, social, achievement, special, challenge)"
+    },
+    "waste_category": {
+      "type": "string",
+      "enum": [
+        "recyclable",
+        "food_waste",
+        "hazardous",
+        "residual",
+        "bulky",
+        "electronic"
+      ],
+      "description": "Type of waste sorted to earn this badge"
+    },
+    "items_sorted": {
+      "type": "number",
+      "description": "Number of items sorted to earn this badge"
+    },
+    "earned_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date badge was earned"
+    },
+    "rarity": {
+      "type": "string",
+      "enum": ["common", "rare", "epic", "legendary"],
+      "description": "Badge rarity level"
+    },
+    "created_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date badge was created"
+    },
+    "updated_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date badge was last updated"
+    },
+    "created_by_id": {
+      "type": "string",
+      "description": "ID of the user who created the badge"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "Email of the user who created the badge"
+    },
+    "is_sample": {
+      "type": "string",
+      "description": "Whether this is a sample badge"
+    }
+  },
+  "required": ["id", "name", "description", "earned_date", "rarity"]
+}
