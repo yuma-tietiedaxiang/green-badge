@@ -246,7 +246,7 @@ export function BadgeUnlock({ onCheckBadges }) {
               ease: "easeInOut",
             }}
           >
-            Welcome to Green Badge!
+            Congratulations!
           </motion.h1>
           <motion.p
             className="text-green-700 text-xl"
@@ -254,7 +254,7 @@ export function BadgeUnlock({ onCheckBadges }) {
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 0.6 }}
           >
-            Start Your Eco Journey
+            You've earned a new badge!
           </motion.p>
         </motion.div>
 
@@ -269,7 +269,7 @@ export function BadgeUnlock({ onCheckBadges }) {
             className="mt-8 px-8 py-6 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
           >
             <Sparkles className="w-5 h-5 mr-2" />
-            Explore My Badges
+            View My Badges
           </Button>
         </motion.div>
       </div>
